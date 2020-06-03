@@ -7,6 +7,10 @@
 <script>
 export default {
   name: 'App',
+  metaInfo: {
+    title: 'Home',
+    titleTemaplate: '%s | Vue Express Seed',
+  },
   components: {
   },
 };

@@ -1,19 +1,26 @@
 import Vue from 'vue';
+import Vuetify from 'vuetify';
 import VueMeta from 'vue-meta';
-import { sync } from 'vuex-router-sync';
+import {
+  sync,
+} from 'vuex-router-sync';
 
-import store from '@/store';
-import router from '@/routes';
 import App from './App.vue';
-import './registerServiceWorker';
+import router from './routes';
+import store from './store';
 
-Vue.use(VueMeta);
-sync(store, router);
+import './registerServiceWorker';
+import '../node_modules/vuetify/dist/vuetify.min.css';
+import './assets/styles/main.scss';
 
 Vue.config.productionTip = false;
 
+Vue.use(Vuetify);
+Vue.use(VueMeta);
+sync(store, router);
+
 new Vue({
+  render: (h) => h(App),
   router,
   store,
-  render: (h) => h(App),
 }).$mount('#app');

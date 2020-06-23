@@ -1,9 +1,15 @@
 import Vue from 'vue';
-import VueRouter from 'vue-router';
+import Router from 'vue-router';
+import Pages from '../pages';
 
-Vue.use(VueRouter);
+Vue.use(Router);
 
-export default new VueRouter({
+export default new Router({
+  // base: '',
+  mode: 'history',
   routes: [{
+    path: '/',
+    component: Pages.Home,
+    name: 'home',
   }],
 });

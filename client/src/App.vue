@@ -1,20 +1,27 @@
 <template>
   <div id="app">
-    <router-view />
+    <!-- <v-app> -->
+      <app-header />
+        <router-view />
+      <app-footer />
+    <!-- </v-app> -->
   </div>
 </template>
-
 <script>
+import Header from './components/common/Header.vue';
+import Footer from './components/common/Footer.vue';
+
 export default {
   name: 'App',
   metaInfo: {
     title: 'Home',
-    titleTemaplate: '%s | Vue Express Seed',
+    titleTemplate: '%s | Vue Express Seed',
   },
   components: {
+    'app-header': Header,
+    'app-footer': Footer,
   },
 };
 </script>
-
-<style>
+<style lang="scss">
 </style>

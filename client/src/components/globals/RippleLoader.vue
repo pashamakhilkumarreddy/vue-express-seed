@@ -3,7 +3,7 @@
 </template>
 <script>
 export default {
-  name: 'Header',
+  name: 'RippleLoader',
 };
 </script>
 <style lang="scss" scoped>

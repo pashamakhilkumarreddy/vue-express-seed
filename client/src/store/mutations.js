@@ -1,5 +1,1 @@
-const mutations = {
-
-};
-
-export default mutations;
+export default {};

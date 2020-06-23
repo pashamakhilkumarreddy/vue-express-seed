@@ -3,7 +3,10 @@
 </template>
 <script>
 export default {
-  name: 'Header',
+  name: 'NotFound',
+  metaInfo: {
+    title: 'Not Found',
+  },
 };
 </script>
 <style lang="scss" scoped>
